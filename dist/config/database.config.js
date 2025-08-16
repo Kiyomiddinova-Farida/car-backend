@@ -25,6 +25,7 @@ let DatabaseConfig = class DatabaseConfig {
             username: this.configService.get('DB_USERNAME'),
             password: this.configService.get('DB_PASSWORD'),
             database: this.configService.get('DB_DATABASE'),
+            url: this.configService.get('DATABASE_URL'),
             entities: [car_entity_1.Car],
             synchronize: this.configService.get('NODE_ENV') === 'development',
             logging: this.configService.get('NODE_ENV') === 'development',
